@@ -1,25 +1,25 @@
 class OneMcp < Formula
   desc "Centralized proxy for Model Context Protocol (MCP) services"
   homepage "https://github.com/burugo/one-mcp"
-  version "1.0.7"
+  version "1.0.12"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/burugo/one-mcp/releases/download/v#{version}/one-mcp-v#{version}-darwin-arm64"
-      sha256 "d6bd8208a3a2cfa278f352e0a58d1aef6730b897ad3adb56280fbb8474850a87"
+      sha256 "5180dbfe2c6c3f48df17e38428d66b4b887db6243a422d8b62f5b5d8c470ad7d"
     else
       url "https://github.com/burugo/one-mcp/releases/download/v#{version}/one-mcp-v#{version}-darwin-amd64"
-      sha256 "b810bfc78b127a16e5421e6a46172f0d1d6f4c4935b9d7ca07242658a587c515"
+      sha256 "788081edd3a8433d31ae575c73ed26cd586ac7992a524a5084421bfb244d8e3a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/burugo/one-mcp/releases/download/v#{version}/one-mcp-v#{version}-linux-arm64"
-      sha256 "9eb2b68427461a85f67d651e15796db0a05b4f9227bce2055aa51bded48ece32"
+      sha256 "d17d967db1e3203b560b2c220f4241bdcce99d10a01a5d6b541b9f26d44a7f6f"
     else
       url "https://github.com/burugo/one-mcp/releases/download/v#{version}/one-mcp-v#{version}-linux-amd64"
-      sha256 "81b86bdfbb13d1852a4ab6a8ffad8aa23203b2a428eb9381897de3cf613ee8c6"
+      sha256 "549f25b85a99178445f711231d361442e390392b8ea3918891cbd6d35ee72936"
     end
   end
 
